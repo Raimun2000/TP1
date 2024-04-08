@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/estilos.css">
+
+      <title>Contacto web</title>
+</head>
+<body>
+      <div id="valoresURL"></div>
+  
+      <script>
+          // Obtener los parámetros de la URL
+          var urlParams = new URLSearchParams(window.location.search);
+  
+          // Obtener los valores de los parámetros
+          var empresa = urlParams.get('empresa');
+          var contacto = urlParams.get('contacto');
+          var email = urlParams.get('email');
+          var mensaje = urlParams.get('mensaje');
+            
+          if (empresa !== null || empresa !== "" && contacto !== null || email !== null || mensaje !== null ) {
+          // Mostrar los valores en pantalla
+          var valoresURLDiv = document.getElementById('valoresURL');
+          valoresURLDiv.innerHTML += "<small>Últimos valores ingresados al FORM:</small><br>";
+          valoresURLDiv.innerHTML += "<small><strong>Empresa:</strong> " + empresa + "</small><br>";
+          valoresURLDiv.innerHTML += "<small><strong>Contacto:</strong> " + contacto + "</small><br>";
+          valoresURLDiv.innerHTML += "<small><strong>Email:</strong> " + email + "</small><br>";
+          valoresURLDiv.innerHTML += "<small><strong>Mensaje:</strong> " + mensaje + "</small>";
+          }
+      </script>
+<header>
+      <h1 class="centrado">Formulario de contacto<br><span class="flotante"><a href="../index.html">Volver a la página principal</a></span></h1> 
+</header>
+      <section class="formulario">
+      <form action="#" id="formulario">
+            <label for="empresa">Empresa:</label>
+            <input type="text" name="empresa" id="empresa" placeholder="Nombre de su empresa" valid="required"><br><br>
+            <label for="contacto">Contacto:</label>
+            <input type="text" name="contacto" id="contacto" placeholder="Nombre de la persona de contacto" valid="required"><br><br>
+            <label for="email">Email:</label>   
+            <input type="email" name="email" id="email" placeholder="Escribe un email válido" valid="required"><br><br>
+            <label for="mensaje">Mensaje:</label>  
+            <textarea name="mensaje" id="mensaje" cols="55" rows="8" placeholder="Escribe aquí tu comentario o sugerencia" valid="required"></textarea><br><br>
+            <input type="submit" value="Enviar"> <input type="reset" value="Borrar">
+      </form>
+      <div id="mensajeError"></div>
+</section>
+<script src="../js/validar.js"></script> 
+</body>
+</html>

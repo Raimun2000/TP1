@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+      box-sizing: border-box;
+}
+
+
+/* Celulares */
+@media only screen and (max-width: 600px) {
+    section {
+        display: block;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    img {
+        display: none;
+    }
+
+    .link_reducido {
+      display: block;
+      color:azure;
+      background-color: rgba(122, 122, 122, 0.8);
+      text-decoration: none;
+      border:rgb(171, 171, 171) solid 2px;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+
+    body {
+        font-size: small;
+    }
+    
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) {
+    section {
+        display: block;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    img {
+        display: none;
+    }
+
+    .link_reducido {
+      display: block;
+      color:azure;
+      background-color: rgba(122, 122, 122, 0.8);
+      text-decoration: none;
+      border:rgb(171, 171, 171) solid 2px;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+
+    body {
+        font-size: medium;
+    }
+    
+}
+
+/* Escritorio */
+@media only screen and (min-width: 992px) {
+    main {
+        display: flex;            
+    }
+
+    section {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;            
+          height: 100%;
+          /* justify-content: space-around; */
+    }
+
+    article {
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        width: 20%;
+    }
+
+    .link_reducido {
+      display: none;
+    }
+
+    .enLinea {
+        display: flex;
+    }
+    
+}
+
+
+body {
+      background-color: darkgray;
+}
+
+header {
+      height: 15%;
+      text-align: center;
+      background-color:darkcyan;
+}
+
+main {
+      height: 80%;
+      scroll-margin-left:  2rem;
+}
+
+header, main {
+      padding: 1%;
+      margin: 1%;
+      border-radius: 5px;
+      color:aliceblue;      
+}
+
+section {
+      background-color: gray;
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-top: 1%;
+      margin-bottom: 2%;
+      padding: 0.35%;
+      box-shadow: 4px 4px 10px black;
+      border-radius: 5px;
+      display: block;
+}
+
+article {
+      color:darkblue;
+  }
+
+p {
+      background-color: whitesmoke;
+      padding: 1%;
+}
+
+.max-50porc {
+      max-width: 50%;
+      max-height: 50%;
+      /* max-width: 200px;
+      max-height: 200px; */
+}
+
+footer {
+      position: fixed;
+      padding-top: 0.4%;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: darkcyan;
+      color:aliceblue;
+      top: 95%;
+      font-size: small;
+  }
+
+.logoFijo {
+      margin: 1%;
+      width: 5rem;
+      position: fixed;
+      bottom: 1.2rem;
+      right: 1%;
+      z-index: 20;
+  }
+
+  .logoFijo {
+    margin: 1%;
+    width: 5rem;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1%;
+    z-index: 20;
+    transition: transform 3s ease-in-out;
+}
+
+.logoFijo:hover {
+    transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el mouse */
+}
+
+.overlay {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 8rem; /* Ajusta la posición según sea necesario */
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo semitransparente */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: none; /* Inicialmente oculto */
+    z-index: 30;
+    transition: opacity 2s ease-in-out; /* Animación de opacidad */
+}
+
+.logoFijo:hover + .overlay {
+    display: block; /* Muestra el overlay cuando se pasa el mouse por encima */
+    opacity: 1; /* Hace que el overlay sea completamente visible */
+}
+
+.overlay a {
+    color: white;
+    text-decoration: none;
+}
+
+section>ul>li {
+    background-color: rgb(210, 210, 210);
+    color:rgb(75, 5, 94);
+    margin-left: 5%;
+    text-align: left;
+}
+
+.formulario {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.flotante {
+    float: inline;
+    font-size: 15px;
+    margin-right: 10%;
+}
+
+.flotante>a {
+    float: inline;
+    font-size: 15px;
+    margin: 0 auto;
+    color:blanchedalmond;
+    text-decoration: none;
+}
+
+.flotante>a:hover {
+    background-color: rgb(89, 150, 186);
+    padding: 0.7%;
+    border-radius: 5px;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=submit], input[type=reset] {
+    width: 48%;
+    display: inline;
+    margin: 0 auto;
+  }
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    box-sizing: border-box;
+  }
+
+.header-articulo {
+      background-color: rgb(239, 191, 71);
+      color:black;
+      border-radius: 5%;
+      padding: 1%;
+      text-align:center;
+      font-size: large;
+  }
+    
+  .footer-articulo {
+      background-color: rgb(210, 210, 210);
+      color:black;
+      border-radius: 5%;
+      padding: 1%;
+      text-align:center;
+      font-size: large;
+      width: 100%;
+}
+.footer-articulo a {
+      text-decoration: none;
+      background-color:rgb(255, 255, 246);
+      color:rgb(50, 100, 143);
+      font-size: smaller;
+      padding: 1%;
+      border-radius: 5%;
+      bottom: 0;
+      position:static;
+}
+
+section.informacion {
+    display: block;
+    width: 98%;    
+    padding: 0.1%;
+    background-color:rgb(82, 102, 126);
+    color:bisque;
+    text-align: center;
+}
+
+section>p {
+    color: darkblue;
+    text-align: justify;
+}
+section>p>strong {
+    font-weight: 900;    
+}
+
+section.informacion>h2 {
+    /* width: 50%; */
+    margin: 0 auto;
+    font-size: x-large;
+    background-color: rgb(164, 223, 255);;
+    color: rgb(1, 32, 63);
+    border: 3px solid  rgb(104, 165, 191);
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
+}
+
+.centrado {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+#mensajeError {
+    display: none;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+section.regresar {
+    display: block;
+    width: 98%;    
+    padding: 0.4%;
+    margin-bottom: 4rem;
+    background-color:rgb(82, 102, 126);
+    text-align: center;
+}
+
+section.regresar>a {
+    color:bisque;
+    text-decoration: none;
+}
+
+section.regresar>a:hover {
+    color:bisque;
+    text-decoration: none;
+    background-color:rgb(62, 62, 62);
+    padding-right: 4px;
+    padding-left: 4px;
+}
