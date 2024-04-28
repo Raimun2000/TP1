@@ -31,5 +31,5 @@
 - Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts. Es optativo incluir algún elemento de Bootstrap. (5  puntos)
 
 ## Tema elegido para desarrollar:
-### Página de presentación de una empresa de TI que brinda servicios B2B
+### Página de venta de celulares y accesorios.
 
