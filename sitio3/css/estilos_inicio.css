@@ -1,0 +1,151 @@
+/* Estilos generales */
+
+/* Estilos generales */
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-width: 320px; /* Evita que el body se achique más allá de 320px */
+  }
+  
+  /* Estilos del encabezado */
+  header {
+      background-color: #226b77;
+      color: #fff;
+      padding: 10px;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.logo img {
+      height: 40px;
+}
+
+.search input {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+}
+
+.nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+}
+
+h1 {
+      text-align: center;
+}
+
+  /* Estilos de la sección de filtros */
+.filter-section {
+      padding: 20px;
+      background-color: #f4f4f4;
+}
+
+.filters {
+      display: flex;
+}
+
+.filter {
+      margin-right: 20px;
+}
+
+.filter h3 {
+      margin-bottom: 10px;
+}
+
+.filter ul {
+      list-style-type: none;
+      padding: 0;
+}
+
+.filter li {
+      margin-bottom: 5px;
+}
+
+  /* Estilos de la cuadrícula de productos */
+.product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+}
+
+.product {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+}
+
+.product img {
+      max-width: 100%;
+      height: auto;
+}
+
+  /* Estilos del pie de página */
+footer {
+      background-color: #226b77;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+}
+
+footer p {
+      font-weight: 700;
+}
+
+.newsletter input {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+      margin-right: 10px;
+}
+
+.newsletter button {
+      padding: 5px 10px;
+      background-color: #fff;
+      color: #333;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+}
+
+.input-wrapper {
+      position: relative;
+      width: 271px;
+      padding-left: 1%;
+      padding-right: 1%;
+}
+
+.input {
+      box-sizing: border-box;
+      color: #191919;
+      padding: 15px 15px 15px 35px;
+      width: 100%;
+}
+
+.input-icon {
+      color: #191919;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+      .filter-section {
+          display: none; /* Ocultar la sección de filtros */
+      }
+      
+      .product-grid {
+          grid-template-columns: 1fr; /* Mostrar los productos de uno en uno */
+      }
+  }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Compras en PhoneUp</title>
+    <link rel="stylesheet" href="../css/estilos_carrito.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../imagenes/logo-del-portal-telefonia.jpg" alt="PhoneUp Logo">
+            </div>
+            
+            <div class="nav-links">                
+                <a href="../index.html">CELULARES</a>
+                <a href="./accesorios.html">ACCESORIOS</a>
+                <a href="./quienes_somos.html">QUIENES SOMOS</a>
+                <a href="./contacto.html">CONTACTO</a>
+                <a href="ingresar.html"><img src="../imagenes/perfil-antes-del-login.jpg" alt=""></a>
+                &nbsp;<img src="../imagenes/carrito-de-compras.jpg" alt="">
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="carrito">
+            <h1>Contenido de tu compra</h1>
+           <table>
+            <tr>
+                <td><h1>Productos:</h1></td>
+                <td><h1>Cantidades:</h1></td>
+                <td><h1>A pagar:</h1></td>
+            </tr>
+            <tr>
+                <td><h2>Celular Samsung S24 Edge</h2><img src="../imagenes/tel2.jpg" alt=""></td>
+                <td><input class="form-input" type="number" value="1"></td>
+                <td rowspan="2">Subtotal: $ 150.000,= <br><br>
+                    <p><input class="form-radio" type="radio" name="pago" id="efectivo">Efectivo <br>
+                    <br>
+                    <input type="radio" name="pago" id="tarjeta">Tarjeta de Crédito (20% de recargo)<br><br>
+                    <input type="radio" name="pago" id="transferencia">Transferencia</p>
+                </td>
+            </tr>
+            <tr>
+                <td><h2>Gafas de Realidad Virtual SAMSUNG GEAR VR</h2><img src="../imagenes/accesorio3.jpg" alt=""></td>
+                <td><input class="form-input" type="number" value="1"></td>                
+            </tr>
+           </table>
+           <button class="boton-compra">Confirmar compra!</button
+        </section>
+    </main>
+    
+    <footer>
+        <div class="newsletter">
+            <form action="">
+            <h3>Recibí ofertas y promociones</h3>
+            <input type="email" name="email" placeholder="Ingresá tu email" required>
+            <button>Suscribirme</button>
+            </form>
+        </div>
+        <p>&copy;2024 Todos los derechos reservados - PhoneUp&reg;</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Estilos generales */
+
+/* Estilos generales */
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-width: 320px; /* Evita que el body se achique más allá de 320px */
+  }
+  
+  /* Estilos del encabezado */
+  header {
+      background-color: #226b77;
+      color: #fff;
+      padding: 10px;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.logo img {
+      height: 40px;
+}
+
+.nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+}
+
+h1 {
+      text-align: center;
+}
+  /* Estilos de la sección de valores */
+.quienes-somos {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 5%;
+}
+
+  .quienes-somos h1 {
+      font-size: xx-large;
+      font-weight: 900;
+}
+
+.quienes-somos h2 {
+      font-size: xx-large;
+      font-weight: bold;
+}
+
+.quienes-somos p {
+      font-size: 18pt;
+}
+
+.quienes-somos img {
+      width: 30%;      
+}
+
+
+  /* Estilos del pie de página */
+footer {
+      background-color: #226b77;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+}
+
+footer p {
+      font-weight: 700;
+}
+
+.newsletter input {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+      margin-right: 10px;
+}
+
+.newsletter button {
+      padding: 5px 10px;
+      background-color: #fff;
+      color: #333;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+}
+
+.input-wrapper {
+      position: relative;
+      width: 271px;
+      padding-left: 1%;
+      padding-right: 1%;
+}
+
+.input {
+      box-sizing: border-box;
+      color: #191919;
+      padding: 15px 15px 15px 35px;
+      width: 100%;
+}
+
+.input-icon {
+      color: #191919;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar a PhoneUp</title>
+    <link rel="stylesheet" href="../css/estilos_ingresar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../imagenes/logo-del-portal-telefonia.jpg" alt="PhoneUp Logo">
+            </div>
+            <div class="nav-links">                
+                <a href="../index.html">CELULARES</a>
+                <a href="./accesorios.html">ACCESORIOS</a>
+                <a href="./quienes_somos.html">QUIENES SOMOS</a>
+                <a href="./contacto.html">CONTACTO</a>
+                &nbsp;<img src="../imagenes/perfil-antes-del-login.jpg" alt="">
+                <a href="carrito.html"><img src="../imagenes/carrito-de-compras.jpg" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+      <h1>Formulario de ingreso</h1>
+      <h2>Si necesita darse de alta, marque la casilla correspondiente</h2>
+      <section class="formulario">
+        <form>
+            <div class="form-group">
+              <label for="usuario" class="form-label">Usuario</label>
+              <input type="text" id="usuario" name="usuario" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="clave" class="form-label">Clave</label>
+              <input type="password" id="clave" name="clave" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <input type="checkbox" id="newsletter" class="form-checkbox">
+                Me quiero dar de alta por primera vez!
+              </label>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="form-button">Ingresar</button>
+            </div>
+          </form>
+    </section>
+    </main>
+    
+    <footer>        
+        <p>&copy;2024 Todos los derechos reservados - PhoneUp&reg;</p>
+    </footer>
+</body>
+</html>

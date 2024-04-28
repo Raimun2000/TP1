@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto PhoneUp</title>
+    <link rel="stylesheet" href="../css/estilos_contacto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../imagenes/logo-del-portal-telefonia.jpg" alt="PhoneUp Logo">
+            </div>
+            
+            <div class="nav-links">
+                <a href="../index.html">CELULARES</a>
+                <a href="./accesorios.html">ACCESORIOS</a>
+                <a href="./quienes_somos.html">QUIENES SOMOS</a>
+                &nbsp;<strong>CONTACTO</strong>
+                <a href="ingresar.html"><img src="../imagenes/perfil-antes-del-login.jpg" alt=""></a>
+                <a href="carrito.html"><img src="../imagenes/carrito-de-compras.jpg" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+      <h1>Póngase en contacto con nosotros!</h1>
+      <h2>Complete el formulario y en breve le  responderemos.</h2><br>
+        <section class="formulario">
+            <form>
+                <div class="form-group">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Género:</label>
+                    <label class="form-radio-label">
+                      <input type="radio" name="genero" value="male" class="form-radio">
+                      Masculino
+                    </label>
+                    <label class="form-radio-label">
+                      <input type="radio" name="genero" value="female" class="form-radio">
+                      Femenino
+                    </label>
+                    <label class="form-radio-label">
+                        <input type="radio" name="genero" value="indefinido" class="form-radio">
+                        Prefiero no decirlo
+                      </label>
+                  </div>
+              
+                <div class="form-group">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" id="email" class="form-input" required>
+                </div>
+              
+                <div class="form-group">
+                  <label class="form-label">
+                    <input type="checkbox" id="newsletter" class="form-checkbox">
+                    Suscribirme al boletín de noticias
+                  </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea id="message" class="form-textarea" rows="5" required></textarea>
+                  </div>
+
+                <div class="form-group">
+                  <button type="submit" class="form-button">Enviar</button>
+                </div>
+              </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;2024 Todos los derechos reservados - PhoneUp&reg;</p>
+    </footer>
+</body>
+</html>
