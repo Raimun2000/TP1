@@ -3,7 +3,7 @@
 ### Integrantes en orden alfabético:
 - Baravaglio, Raimundo
 - Minvielle, Nehuen
-- Rueja Hoyos, Sergio Daniel
+- Gastón Andrés Debiaggi
 
 ## Consigna:
 ### Construir un sitio exclusivamente utilizando HTML y CSS
